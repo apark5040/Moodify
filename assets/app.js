@@ -20,7 +20,7 @@ var client_secret = keys.spotify_secret;
 var access_token;
 
 console.log(client_id);
-console.log(client_secret)
+console.log(client_secret);
 
 // The getUserMedia interface is used for handling camera input.
 // Some browsers need a prefix so here we're covering all the options
