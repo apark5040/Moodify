@@ -44,7 +44,7 @@ function takeSnapshot() {
 
     var hidden_canvas = document.querySelector('canvas'),
         context = hidden_canvas.getContext('2d');
-    take_photo_btn.classList.add("disabled");
+        take_photo_btn.classList.add("disabled");
 
     var width = video.videoWidth,
         height = video.videoHeight;
@@ -96,7 +96,7 @@ function generateAccessToken(cb) {
         headers: {
 
             //adds API key and API secret
-            Authorization: "Basic " + btoa(spotify_id + ":" + spotify_secret)
+            Authorization: "Basic " + btoa(client_id + ":" + client_secret)
         }
     }).then(res => {
 
@@ -222,7 +222,11 @@ take_photo_btn.addEventListener("click", function (e) {
 
         //gets imgur url
         var imgurUrl = data.data.link;
+
+        //get image deletehash
+        var imgurDelete = data.data.deletehash;
         console.log(imgurUrl);
+        console.log(imgurDelete);
 
         ///Emotion analysis API. Uses imgur url as input along with API key and ID
         $.ajax({
@@ -332,6 +336,19 @@ take_photo_btn.addEventListener("click", function (e) {
 
             //removes loading circle when everything is done
             $("#loading").addClass("hide");
+
+            //Another Imgur ajax to delete the uploaded image
+            $.ajax({
+                url: 'https://api.imgur.com/3/image/'+imgurDelete,
+                type: 'DELETE',
+                headers: {
+                    'Authorization': keys.imgur_id
+                }
+            }).then(data => {
+        
+                console.log("Image deleted from Imgur");
+        
+            });
 
         });
     }).catch(err => console.log(err));
