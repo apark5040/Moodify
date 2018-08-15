@@ -25,13 +25,15 @@ The Spotify playlists shows the playlist art cover, a link to open the Spotify p
 
 In order to use Moodify, you must create a `keys.js` file which will contain your api keys:
 
-`var keys = {
+```
+var keys = {
     spotify_id : "**INSERT SPOTIFY ID HERE**",
     spotify_secret : "**INSERT SPOTIFY SECRET KEY HERE**",
     imgur_id : "client-ID **INSERT IMGUR ID HERE**",
     kairos_id : "**INSERT KAIROS ID HERE**",
     kairos_key : "**INSERT KAIROS KEY HERE**"
-}`
+}
+```
 
 
 **note**
