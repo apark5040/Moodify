@@ -5,7 +5,10 @@ https://apark5040.github.io/Moodify/
 ## Overview
 This is a front-end app that reads the mood of the user and returns playlists based of the user's mood using APIs. 
 
-(Maybe put image of website here)
+
+[Moodify_01](images/moodify_01.png)
+
+
 
 APIs used:
 
