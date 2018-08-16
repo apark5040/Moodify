@@ -26,7 +26,7 @@ The Spotify playlists shows the playlist art cover, a link to open the Spotify p
 
 ## Instructions
 
-In order to use Moodify, you must create a `keys.js` file which will contain your api keys:
+In order to use Moodify, you must create a `keys.js` file which will contain your api keys. This file must be saved inside the `assets` folder:
 
 ```
 var keys = {
