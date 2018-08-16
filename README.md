@@ -39,8 +39,18 @@ var keys = {
 ```
 
 
-**note**
-(API registration instructions goes here)
+ To get the API keys, you can follow the links below. You will have to first create an account before requesting the keys. The links will provide a step-by-step instructions on how to get them:
+
+ **Spotify:** https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app
+
+
+ **Kairos:**
+ https://developer.kairos.com/signup
+
+
+ **Imgur:**
+ https://api.imgur.com/oauth2
+
 
 
 
