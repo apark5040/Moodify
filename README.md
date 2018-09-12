@@ -2,7 +2,7 @@
 
 https://apark5040.github.io/Moodify/
 
-**THE KAIROS API HAS REMOVED THEIR FREE TIER VERSION, SO THE FACIAL RECOGNITION PART OF THIS APP WILL NOT WORK**
+NOTE: **THE KAIROS API HAS REMOVED THEIR FREE TIER VERSION, SO THE FACIAL RECOGNITION PART OF THIS APP WILL NOT WORK**
 
 ## Overview
 This is a front-end app that reads the mood of the user and returns playlists based of the user's mood using APIs. 
